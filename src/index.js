@@ -1,7 +1,8 @@
 class Api{
-    constructor(url){
+    #secure;
+    constructor(url, method="GET"){
         this.url = url;
-        this.method = "GET"
+        this.method = method;
         this.#secure = url.startsWith("https")
     }
     isSecure(){
