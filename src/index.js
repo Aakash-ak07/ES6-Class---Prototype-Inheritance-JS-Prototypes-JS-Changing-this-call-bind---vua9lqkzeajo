@@ -1,4 +1,4 @@
-class Api{
+class API{
     #secure;
     constructor(url, method="GET"){
         this.url = url;
